@@ -15,11 +15,28 @@ head {
 position: absolute;
 left: 80%;
 }
-.paragraph {
-margin: 20px;
-text-align: justify;
+h2 {
+  font-size: 1.5em;
+  color: #ee3e80;
+  margin-left: 30px;
 }
 
+.paragraph {
+margin: 30px;
+text-align: justify;
+color: #2c3792;
+}
+#top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
+}
 #ancres {
   display: flex;
   flex-direction: row;
@@ -35,10 +52,9 @@ text-align: justify;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #2c3792;
+  margin: 0px;
 }
-#ancre_competences {
-  margin: 55px;
-}
+
 #container_competences {
   display: flex;
   flex-direction: row;
