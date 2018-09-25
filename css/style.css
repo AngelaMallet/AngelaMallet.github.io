@@ -8,12 +8,13 @@ a:hover {
 a{
   color: #2c3792;
 }
-head {
-  display: flex;
-}
 .hautdepage {
 position: absolute;
-left: 80%;
+left: 90%;
+font-size: 0.8em
+}
+h1 {
+  font-size: 1.8em;
 }
 h2 {
   font-size: 1.5em;
@@ -49,6 +50,7 @@ color: #2c3792;
 }
 #baseline {
   font-size: 0.8em;
+  font-style: italic;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #2c3792;
@@ -59,6 +61,10 @@ color: #2c3792;
   display: flex;
   flex-direction: row;
   vertical-align: middle;
+}
+#formation {
+  color: #2c3792;
+  margin: 30px 0px 0px 30px;
 }
 .skills-diagram {
   font-size: 16px;
@@ -192,3 +198,175 @@ color: #2c3792;
   border-color: rgba(81, 112, 144, 1);
   color: rgba(81, 112, 144, 1);
 }
+
+#timeline {
+  list-style: none;
+  margin: 50px 0 30px 120px;
+  padding-left: 30px;
+  border-left: 8px solid #eee9dc;
+}
+#timeline li {
+  margin: 40px 0;
+  position: relative;
+}
+#timeline p {
+  margin: 0 0 15px;
+  color: #2C3792;
+}
+
+.date {
+  margin-top: -10px;
+  top: 50%;
+  left: -158px;
+  font-size: 0.95em;
+  line-height: 20px;
+  position: absolute;
+}
+
+.circle {
+  margin-top: -10px;
+  top: 50%;
+  left: -44px;
+  width: 10px;
+  height: 10px;
+  background:#ee3792;
+  border: 5px solid #eee9dc;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+}
+
+.content {
+  max-height: 20px;
+  padding: 50px 20px 0;
+  border-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 0.5em;
+  position: relative;
+}
+.content:before, .content:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  position: absolute;
+  pointer-events: none;
+  right: 100%;
+}
+.content:before {
+  border-right-color: inherit;
+  border-width: 20px;
+  top: 50%;
+  margin-top: -20px;
+}
+.content:after {
+  border-right-color: #ee3e80;
+  border-width: 17px;
+  top: 50%;
+  margin-top: -17px;
+}
+.content p {
+  max-height: 0;
+  color: transparent;
+  text-align: justify;
+  word-break: break-word;
+  hyphens: auto;
+  overflow: hidden;
+}
+
+label {
+  font-size: 1.3em;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  top: 10px;
+  transition: transform 0.2s linear;
+  color: #2c3792;
+  margin-left: 10px;
+}
+
+.radio {
+  display: none;
+}
+
+.radio:checked + .relative label {
+  cursor: auto;
+  transform: translateX(42px);
+}
+.radio:checked + .relative .circle {
+  background: #f98262;
+}
+.radio:checked ~ .content {
+  max-height: 180px;
+  border-color: #eee9dc;
+  margin-right: 20px;
+  transform: translateX(20px);
+  transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
+}
+.radio:checked ~ .content p {
+  max-height: 200px;
+  color: #eee9dc;
+  transition: color 0.3s linear 0.3s;
+}
+/*Expériences*/
+/*grid setup*/
+.grid-demo {
+ display: grid;
+ grid-row-gap: 2px;
+ grid-column-gap: 2px;
+}
+
+/*column sizing using fr*/
+.demo-4 {
+grid-template-columns: 1fr 3fr;
+}
+
+@media screen and (min-width:476px) {
+.demo-4 {
+grid-template-columns: 1fr 1fr 2fr;
+}}
+
+/*styles for the grid-items*/
+.box {
+ display: -webkit-box;
+ display: -webkit-flex;
+ display:    -moz-box;
+ display: -ms-flexbox;
+ display:         flex;
+ -webkit-flex-direction: column;
+     -ms-flex-direction: column;
+         flex-direction: column;
+ padding-right: 0;
+ padding-left: 0;
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+}
+
+/*font styles*/
+h1 {
+ font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+.child-title {
+ margin: 0;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ color: #2c3792;
+ text-align: center;
+ font-size: 1em;
+}
+
+@media screen and (max-width: 990px){
+  #ancres {
+    flex-direction: column;
+  }
+  #container_competences {
+    display: flex;
+    flex-direction: column;
+}
+/* -------------------------------------
+ * timeline
+ * ------------------------------------- */
