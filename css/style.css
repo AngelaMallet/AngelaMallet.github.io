@@ -33,6 +33,16 @@ color: #2c3792;
   justify-content: center;
   margin-left: 30px;
 }
+#icons a{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 30px;
+}
+#media{
+  display: block;
+  margin-left: auto;
+}
 #logo {
   display: block;
   margin-left: auto;
@@ -56,12 +66,12 @@ color: #2c3792;
   color: #2c3792;
   margin: 0px;
 }
-
 #container_competences {
   display: flex;
   flex-direction: row;
   vertical-align: middle;
 }
+
 #formation {
   color: #2c3792;
   margin: 30px 0px 0px 30px;
