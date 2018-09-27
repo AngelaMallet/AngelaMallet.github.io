@@ -27,6 +27,9 @@ margin: 30px;
 text-align: justify;
 color: #2c3792;
 }
+.container.espace {
+  margin-top: 20px;
+}
 #top {
   display: flex;
   flex-direction: column;
@@ -563,8 +566,14 @@ p.footer {
     }
 }
 @media screen and (max-width: 990px){
+  .container.espace {
+    flex-direction: column;
+    text-align: center;
+    padding-left: 30px;
+  }
   #ancres {
     flex-direction: column;
+    text-align: center;
   }
   #container_competences {
     display: flex;
