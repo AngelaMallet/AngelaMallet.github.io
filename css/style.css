@@ -27,6 +27,9 @@ margin: 30px;
 text-align: justify;
 color: #2c3792;
 }
+.hautdepage {
+  float: right;
+}
 .container.espace {
   margin-top: 20px;
 }
