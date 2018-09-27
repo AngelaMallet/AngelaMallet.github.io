@@ -50,6 +50,9 @@ color: #2c3792;
   justify-content: space-around;
   padding: 100px;
 }
+#ancre_experiences {
+  margin-left: auto;
+}
 
 #Prenom {
   color: #ee3e80;
@@ -601,4 +604,7 @@ p.footer {
 }
 #ancre_experiences, #ancre_competences, #ancre_formations, #ancre_contact,#ancre_Projets{
   margin-left:0px;
+}
+#ancre_experiences {
+  margin-left: -13px;
 }
