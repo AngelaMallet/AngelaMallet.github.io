@@ -64,6 +64,23 @@ color: #2c3792;
   flex-direction: row;
   vertical-align: middle;
 }
+.container-fluid.formations {
+  text-align: center;
+}
+.border {
+  border:solid 1px #ee3e80;
+  padding: 15px;
+}
+.formations h1 {
+  color: #ee3e80;
+}
+
+.formations p {
+  color: #2c3792;
+}
+.italic {
+  font-style: italic;
+}
 
 #formation {
   color: #2c3792;
