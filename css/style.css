@@ -51,7 +51,8 @@ color: #2c3792;
   padding: 100px;
 }
 #ancre_experiences {
-  margin-left: auto;
+  margin-left: -58px;
+  padding-top: 55px;
 }
 
 #Prenom {
