@@ -8,11 +8,6 @@ a:hover {
 a{
   color: #2c3792;
 }
-.hautdepage {
-position: absolute;
-left: 90%;
-font-size: 0.8em
-}
 h1 {
   font-size: 1.8em;
 }
@@ -21,6 +16,7 @@ h2 {
   color: #ee3e80;
   margin-left: 30px;
 }
+
 .infographie{
   color: #ee3e80;
   font-size: 0.7em;
@@ -37,20 +33,10 @@ color: #2c3792;
   justify-content: center;
   margin-left: 30px;
 }
-#icons a{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 30px;
-}
-#media{
-  display: block;
-  margin-left: auto;
-}
+
 #logo {
-  display: block;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
 }
 #ancres {
   display: flex;
