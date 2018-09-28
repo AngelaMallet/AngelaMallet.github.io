@@ -377,8 +377,8 @@ p.contact {
 
 #contact{
 
-  background: -webkit-linear-gradient(180deg, rgb(238, 62, 128), rgb(211, 211, 211));
-  background: linear-gradient(180deg, rgb(238, 62, 128), rgb(211, 211, 211));
+  background: -webkit-linear-gradient(-180deg, rgb(238, 62, 128), rgb(248, 222, 225));
+  background: linear-gradient(-180deg, rgb(238, 62, 128), rgb(248, 222, 225));
 
 
 color:#f4f4f4;
