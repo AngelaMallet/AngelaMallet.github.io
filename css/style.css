@@ -376,9 +376,13 @@ p.contact {
 
 
 #contact{
-	background:#ee3e80;
-	color:#f4f4f4;
-	padding-bottom:18px;
+
+  background: -webkit-linear-gradient(180deg, rgb(238, 62, 128), rgb(211, 211, 211));
+  background: linear-gradient(180deg, rgb(238, 62, 128), rgb(211, 211, 211));
+
+
+color:#f4f4f4;
+padding-bottom:18px;
 }
 
 /* -----------------------------------------------
