@@ -51,8 +51,8 @@ color: #2c3792;
   padding: 100px;
 }
 #ancre_experiences {
-  margin-left: -58px;
   padding-top: 55px;
+  margin-left: 20px;
 }
 
 #Prenom {
@@ -337,41 +337,8 @@ label {
   transition: color 0.3s linear 0.3s;
 }
 /*Expériences*/
-/*grid setup*/
-.grid-demo {
- display: grid;
- grid-row-gap: 2px;
- grid-column-gap: 2px;
-}
 
-/*column sizing using fr*/
-.demo-4 {
-grid-template-columns: 1fr 3fr;
-}
-
-@media screen and (min-width:476px) {
-.demo-4 {
-grid-template-columns: 1fr 1fr 2fr;
-}}
-
-/*styles for the grid-items*/
-.box {
- display: -webkit-box;
- display: -webkit-flex;
- display:    -moz-box;
- display: -ms-flexbox;
- display:         flex;
- -webkit-flex-direction: column;
-     -ms-flex-direction: column;
-         flex-direction: column;
- padding-right: 0;
- padding-left: 0;
- -webkit-box-orient: vertical;
- -webkit-box-direction: normal;
-    -moz-box-orient: vertical;
-    -moz-box-direction: normal;
-}
-
+/
 /*font styles*/
 h1 {
  font-family: 'Montserrat', Helvetica, sans-serif;
@@ -384,15 +351,6 @@ h1 {
  text-align: center;
  font-size: 1em;
 }
-
-#body {
-    margin: 5px 20px;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2VlZWVlZSI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiNlNmU2ZTYiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iI2Q4ZDhkOCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2MiIHg9IjMiIHk9IjMiPjwvdXNlPgo8L3N2Zz4=");
-    font-family: 'Montserrat';
-    font-weight: 300;
-}
-
-
 .text-right {
   color: #fff;
 }
@@ -402,11 +360,32 @@ p.footer {
     font-size: 18px;
     text-align: center;
 }
+/*contact*/
+h1.contact,h2.contact,h3.contact {
+	margin:0 0 35px 0;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing:1px;
+}
+
+p.contact {
+	margin:0 0 25px;
+	font-size:18px;
+	line-height:1.6em;
+}
+
+
+#contact{
+	background:#ee3e80;
+	color:#f4f4f4;
+	padding-bottom:18px;
+}
 
 /* -----------------------------------------------
  * Timeline
  * --------------------------------------------- */
  .timeline {
+    min-height: 450px;
     list-style: none;
     padding: 30px;
     position: relative;
@@ -605,7 +584,4 @@ p.footer {
 }
 #ancre_experiences, #ancre_competences, #ancre_formations, #ancre_contact,#ancre_Projets{
   margin-left:0px;
-}
-#ancre_experiences {
-  margin-left: -13px;
 }
