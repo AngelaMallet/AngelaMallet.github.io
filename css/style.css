@@ -1,6 +1,23 @@
 body{font-family: 'Montserrat';
 margin-top: 20px;
 }
+i{
+  font-size: .8rem;
+}
+
+.contentContainer {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+#hautdepageId {
+  margin-left: 150rem;
+}
+
+mark {
+  background-color: #F8FF00;
+  padding: .5rem;
+}
+
 a:hover {
   color: #ee3e80;
   text-decoration: underline;
@@ -41,6 +58,8 @@ color: #2c3792;
 }
 
 #logo {
+  width: 65%;
+  height: 65%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -70,6 +89,7 @@ color: #2c3792;
   display: flex;
   flex-direction: row;
   vertical-align: middle;
+  margin-left: 5rem;
 }
 .container-fluid.formations {
   text-align: center;
@@ -163,10 +183,11 @@ color: #2c3792;
   width: 6em;
   height: 6em;
   line-height: 6em;
+  background: -webkit-radial-gradient(rgb(252, 181, 218), rgb(252, 142, 190));
+background: radial-gradient(rgb(252, 181, 218), rgb(252, 142, 190));
 
-  background-color: rgba(234, 112, 97, .3);
-  border-color: rgba(234, 112, 97, 1);
-  color: rgba(234, 112, 97, 1);
+  
+  color: whitesmoke;
 }
 .skills-diagram .skill-5 {
   vertical-align: bottom;
@@ -174,9 +195,11 @@ color: #2c3792;
   width: 5em;
   height: 5em;
   line-height: 5em;
-  background-color: rgba(109, 182, 173, .3);
-  border-color: rgba(109, 182, 173, 1);
-  color: rgba(109, 182, 173, 1);
+
+  background: -webkit-radial-gradient(rgb(250, 197, 241), rgb(235, 129, 235));
+  background: radial-gradient(rgb(250, 197, 241), rgb(235, 129, 235));
+  
+  color: whitesmoke;
 }
 .skills-diagram .skill-6 {
   vertical-align: top;
@@ -184,19 +207,20 @@ color: #2c3792;
   width: 6em;
   height: 6em;
   line-height: 6em;
-
-  background-color: rgba(195, 192, 100, .3);
-  border-color: rgba(195, 192, 100, 1);
-  color: rgba(195, 192, 100, 1);
+  background: -webkit-radial-gradient(rgb(252, 122, 230), rgb(241, 117, 171));
+  background: radial-gradient(rgb(252, 122, 230), rgb(241, 117, 171));
+color: whitesmoke;  
 }
 .skills-diagram .skill-7 {
   width: 7em;
   height: 7em;
   line-height: 7em;
-
-  background-color: rgba(214, 89, 102, .3);
-  border-color: rgba(214, 89, 102, 1);
-  color: rgba(214, 89, 102, 1);
+  color: whitesmoke;
+  background: -webkit-radial-gradient(rgb(252, 122, 230), rgb(246, 159, 250));
+  background: radial-gradient(rgb(252, 122, 230), rgb(246, 159, 250));
+  
+  
+  
 }
 .skills-diagram .skill-8 {
   vertical-align: bottom;
@@ -204,18 +228,24 @@ color: #2c3792;
   width: 8em;
   height: 8em;
   line-height: 8em;
-  background-color: rgba(46, 138, 75, .3);
-  border-color: rgba(46, 138, 75, 1);
-  color: rgba(46, 138, 75, 1);
+color: whitesmoke;
+background: -webkit-radial-gradient(rgb(252, 122, 230), rgb(250, 159, 231));
+background: radial-gradient(rgb(252, 122, 230), rgb(250, 159, 231));
+
+
+
+
+  
 }
 .skills-diagram .skill-9 {
-  width: 11em;
-  height: 11em;
-  line-height: 11em;
+  width: 10em;
+  height: 10em;
+  line-height: 10em;
+color: whitesmoke;
+background: -webkit-radial-gradient(rgb(252, 122, 190), rgb(243, 121, 174));
+background: radial-gradient(rgb(252, 122, 190), rgb(243, 121, 174));
 
-  background-color: rgba(177, 18, 2, .3);
-  border-color: rgba(177, 18, 2, 1);
-  color: rgba(177, 18, 2, 1);
+ 
 }
 .skills-diagram .skill-10 {
   width: 14em;
@@ -338,7 +368,7 @@ label {
 }
 /*Expériences*/
 
-/
+
 /*font styles*/
 h1 {
  font-family: 'Montserrat', Helvetica, sans-serif;
@@ -374,7 +404,10 @@ p.contact {
 	line-height:1.6em;
 }
 
-
+b{
+  font-weight: bold;
+  color: #ee3e80;
+}
 #contact{
 
   background: -webkit-linear-gradient(-180deg, rgb(238, 62, 128), rgb(248, 222, 225));
@@ -383,6 +416,15 @@ p.contact {
 
 color:#f4f4f4;
 padding-bottom:18px;
+}
+
+footer {
+  margin-top: 15rem; 
+}
+/* bootstrap.min.css */
+
+.img-fluid {
+  max-width: unset;
 }
 
 /* -----------------------------------------------
@@ -508,6 +550,7 @@ padding-bottom:18px;
     padding: 5px 15px;
     background-color:#ee3e80;
 }
+
 .timeline-footer p { margin-bottom: 0; }
 .timeline-footer > a {
     cursor: pointer;
@@ -527,65 +570,70 @@ padding-bottom:18px;
     float: none;
 }
 @media (max-width: 767px) {
-    ul.timeline:before {
-        left: 40px;
-    }
-    ul.timeline > li {
-        margin-bottom: 0px;
-        position: relative;
-        width:100%;
-        float: left;
-        clear: left;
-    }
-    ul.timeline > li > .timeline-panel {
-        width: calc(100% - 65px);
-        width: -moz-calc(100% - 65px);
-        width: -webkit-calc(100% - 65px);
-    }
-    ul.timeline > li > .timeline-badge {
-        left: 28px;
-        margin-left: 0;
-        top: 16px;
-    }
-    ul.timeline > li > .timeline-panel {
-        float: right;
-    }
-    ul.timeline > li > .timeline-panel:before {
-        border-left-width: 0;
-        border-right-width: 15px;
-        left: -15px;
-        right: auto;
-    }
-    ul.timeline > li > .timeline-panel:after {
-        border-left-width: 0;
-        border-right-width: 14px;
-        left: -14px;
-        right: auto;
-    }
-    .timeline > li.timeline-inverted {
-        float: left;
-        clear: left;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .timeline > li.timeline-inverted > .timeline-badge {
-        left: 28px;
-    }
+  ul.timeline:before {
+      left: 40px;
+  }
+  ul.timeline > li {
+      margin-bottom: 0px;
+      position: relative;
+      width:100%;
+      float: left;
+      clear: left;
+  }
+  ul.timeline > li > .timeline-panel {
+      width: calc(100% - 65px);
+      width: -moz-calc(100% - 65px);
+      width: -webkit-calc(100% - 65px);
+  }
+  ul.timeline > li > .timeline-badge {
+      left: 28px;
+      margin-left: 0;
+      top: 16px;
+  }
+  ul.timeline > li > .timeline-panel {
+      float: right;
+  }
+  ul.timeline > li > .timeline-panel:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+  }
+  ul.timeline > li > .timeline-panel:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+  }
+  .timeline > li.timeline-inverted {
+      float: left;
+      clear: left;
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+  .timeline > li.timeline-inverted > .timeline-badge {
+      left: 28px;
+  }
 }
 @media screen and (max-width: 990px){
-  .container.espace {
-    flex-direction: column;
-    text-align: center;
-    padding-left: 30px;
-  }
-  #ancres {
-    flex-direction: column;
-    text-align: center;
-  }
-  #container_competences {
-    display: flex;
-    flex-direction: column;
+.container.espace {
+  flex-direction: column;
+  text-align: center;
+  padding-left: 30px;
+}
+#ancres {
+  flex-direction: column;
+  text-align: center;
+}
+#container_competences {
+  display: flex;
+  flex-direction: column;
 }
 #ancre_experiences, #ancre_competences, #ancre_formations, #ancre_contact,#ancre_Projets{
-  margin-left:0px;
+margin-left:0px;
+}
+
+.img-fluid {
+  max-width: 100%;
+}
 }
